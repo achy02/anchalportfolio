@@ -16,14 +16,11 @@ const Index = () => {
       <Projects />
       <Skills />
       <Contact />
-      
-      {/* Footer */}
       <footer className="py-8 bg-secondary/10 border-t border-border">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Anchal Tiwari. 
+            © 2024 Anchal Tiwari.
           </p>
-          
         </div>
       </footer>
     </div>
