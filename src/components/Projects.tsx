@@ -163,7 +163,7 @@ export const Projects = () => {
             className="bg-gradient-primary hover:bg-gradient-secondary border-0 text-white hover:scale-105 transition-all duration-300"
             asChild
           >
-            <a href="https://github.com/anchal-tiwari" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/achy02" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </a>
