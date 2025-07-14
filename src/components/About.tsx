@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, Award, MapPin } from 'lucide-react';
+import { GraduationCap, Award, MapPin, Star } from 'lucide-react';
 
 export const About = () => {
   return (
@@ -15,8 +15,9 @@ export const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left side - Education Card */}
+          {/* Left side - Education, Journey, Stats */}
           <div className="space-y-6">
+            {/* Education Card */}
             <Card className="portfolio-card">
               <CardContent className="p-8">
                 <div className="flex items-start gap-4">
@@ -24,7 +25,10 @@ export const About = () => {
                     <GraduationCap className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2">Education</h3>
+                    <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+                      <GraduationCap className="w-5 h-5 text-primary" />
+                      Education
+                    </h3>
                     <div className="space-y-3">
                       <div>
                         <h4 className="text-lg font-semibold text-primary">Mumbai University</h4>
@@ -42,7 +46,24 @@ export const About = () => {
               </CardContent>
             </Card>
 
-            {/* Quick stats */}
+            {/* My Journey Card */}
+            <Card className="portfolio-card">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  My Journey
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  I’m <span className="font-semibold text-primary">Anchal Tiwari</span>, a dedicated learner and tech enthusiast. I completed my diploma in Computer Engineering from Vidyalankar Polytechnic in 2023. During my academic years, I undertook an internship that introduced me to Flutter development — a moment that sparked my interest in app creation and mobile technology.
+                  <br /><br />
+                  Post diploma, I secured direct second-year admission in 2023 at Thakur College of Engineering, specializing in Computer Science and Engineering with a focus on Cybersecurity. Alongside my academic journey, I explored my passion for design and served as the lead UI/UX Designer intern at <span className="font-semibold">FyreGig</span>, where I was responsible for designing the Fundsmama app and website from the ground up.
+                  <br /><br />
+                  I continue to explore and grow in the field of cybersecurity, aiming to bridge the gap between secure software development and seamless user experience. My goal is to build digital solutions that are both secure and user-friendly.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4">
               <Card className="portfolio-card">
                 <CardContent className="p-6 text-center">
@@ -61,9 +82,13 @@ export const About = () => {
 
           {/* Right side - Skills and Achievements */}
           <div className="space-y-6">
+            {/* Core Competencies */}
             <Card className="portfolio-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Core Competencies</h3>
+                <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                  <Award className="w-5 h-5 text-primary" />
+                  Core Competencies
+                </h3>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold mb-2 text-primary">Full-Stack Development</h4>
@@ -87,9 +112,13 @@ export const About = () => {
               </CardContent>
             </Card>
 
+            {/* Achievements */}
             <Card className="portfolio-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Recent Achievements</h3>
+                <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                  <Star className="w-5 h-5 text-primary" />
+                  Recent Achievements
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-gradient-primary rounded-full mt-2"></div>
@@ -113,20 +142,6 @@ export const About = () => {
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* New Card - My Journey */}
-            <Card className="portfolio-card">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">My Journey</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  I’m <span className="font-semibold text-primary">Anchal Tiwari</span>, a dedicated learner and tech enthusiast. I completed my diploma in Computer Engineering from Vidyalankar Polytechnic in 2023. During my academic years, I undertook an internship that introduced me to Flutter development — a moment that sparked my interest in app creation and mobile technology.
-                  <br /><br />
-                  Post diploma, I secured direct second-year admission in 2023 at Thakur College of Engineering, specializing in Computer Science and Engineering with a focus on Cybersecurity. Alongside my academic journey, I explored my passion for design and served as the lead UI/UX Designer intern at <span className="font-semibold">FyreGig</span>, where I was responsible for designing the Fundsmama app and website from the ground up.
-                  <br /><br />
-                  I continue to explore and grow in the field of cybersecurity, aiming to bridge the gap between secure software development and seamless user experience. My goal is to build digital solutions that are both secure and user-friendly.
-                </p>
               </CardContent>
             </Card>
           </div>
