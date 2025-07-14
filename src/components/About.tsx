@@ -115,6 +115,20 @@ export const About = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* New Card - My Journey */}
+            <Card className="portfolio-card">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold mb-6">My Journey</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  I’m <span className="font-semibold text-primary">Anchal Tiwari</span>, a dedicated learner and tech enthusiast. I completed my diploma in Computer Engineering from Vidyalankar Polytechnic in 2023. During my academic years, I undertook an internship that introduced me to Flutter development — a moment that sparked my interest in app creation and mobile technology.
+                  <br /><br />
+                  Post diploma, I secured direct second-year admission in 2023 at Thakur College of Engineering, specializing in Computer Science and Engineering with a focus on Cybersecurity. Alongside my academic journey, I explored my passion for design and served as the lead UI/UX Designer intern at <span className="font-semibold">FyreGig</span>, where I was responsible for designing the Fundsmama app and website from the ground up.
+                  <br /><br />
+                  I continue to explore and grow in the field of cybersecurity, aiming to bridge the gap between secure software development and seamless user experience. My goal is to build digital solutions that are both secure and user-friendly.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
