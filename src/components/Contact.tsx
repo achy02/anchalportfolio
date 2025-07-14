@@ -26,7 +26,7 @@ export const Contact = () => {
       icon: <Linkedin className="w-6 h-6" />,
       title: "LinkedIn",
       value: "Connect with me",
-      link: "https://linkedin.com/in/anchal-tiwari",
+      link: "https://www.linkedin.com/in/anchal-tiwari2023/",
       description: "Professional networking and updates",
       color: "text-tech-purple",
       bgColor: "bg-tech-purple/10"
