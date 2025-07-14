@@ -118,7 +118,7 @@ export const Contact = () => {
                   className="gradient-border hover:scale-105 transition-all duration-300"
                   asChild
                 >
-                  <a href="https://linkedin.com/in/anchal-tiwari" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/anchal-tiwari2023/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-5 h-5 mr-2" />
                     LinkedIn
                   </a>
