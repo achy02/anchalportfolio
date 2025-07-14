@@ -16,8 +16,8 @@ export const Projects = () => {
       ],
       technologies: ["Dart", "Firebase", "ReactJs", "Figma"],
       date: "January 2023",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/achy02/BlueCollar",
+      liveUrl: "https://github.com/achy02/BlueCollar",
       image: "🔧",
       category: "Full-Stack"
     },
@@ -31,8 +31,8 @@ export const Projects = () => {
       ],
       technologies: ["Dart", "MongoDB", "Figma", "Gemini API", "AI/ML"],
       date: "September 2024",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/achy02/Eyeshine",
+      liveUrl: "https://github.com/achy02/Eyeshine",
       image: "👁️",
       category: "AI/Accessibility"
     },
@@ -47,8 +47,8 @@ export const Projects = () => {
       ],
       technologies: ["Dart", "MongoDB", "Figma", "Security Tools", "Material UI"],
       date: "April 2025",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/achy02/AppShield-Scan",
+      liveUrl: "https://github.com/achy02/AppShield-Scan",
       image: "🛡️",
       category: "Cybersecurity"
     }
