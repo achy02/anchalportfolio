@@ -41,7 +41,6 @@ export const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-secondary/5">
       <div className="container mx-auto px-4">
-        {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Technical <span className="text-gradient-primary">Skills</span>
@@ -51,14 +50,15 @@ export const Skills = () => {
           </p>
         </div>
 
-        {/* Skill Cards */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
             <Card key={index} className="portfolio-card group h-full">
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className={`p-3 rounded-lg ${category.bgColor}`}>
-                    <div className={category.color}>{category.icon}</div>
+                  <div className={p-3 rounded-lg ${category.bgColor}}>
+                    <div className={category.color}>
+                      {category.icon}
+                    </div>
                   </div>
                   <CardTitle className="text-lg group-hover:text-gradient-primary transition-all duration-300">
                     {category.title}
@@ -68,12 +68,13 @@ export const Skills = () => {
                   {category.description}
                 </p>
               </CardHeader>
+
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, idx) => (
-                    <Badge
-                      key={idx}
-                      variant="secondary"
+                    <Badge 
+                      key={idx} 
+                      variant="secondary" 
                       className="tech-skill text-xs hover:scale-105 transition-all duration-300"
                     >
                       {skill}
@@ -85,14 +86,13 @@ export const Skills = () => {
           ))}
         </div>
 
-        {/* Proficiency Bars */}
+        {/* Proficiency indicators */}
         <div className="mt-16 max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-center mb-8">
             Core <span className="text-gradient-primary">Competencies</span>
           </h3>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {/* Development Expertise */}
+          
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="portfolio-card">
               <CardContent className="p-8">
                 <h4 className="font-semibold mb-6 text-primary">Development Expertise</h4>
@@ -109,10 +109,10 @@ export const Skills = () => {
                         <span className="text-sm text-muted-foreground">{item.level}%</span>
                       </div>
                       <div className="w-full bg-secondary rounded-full h-2">
-                        <div
+                        <div 
                           className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${item.level}%` }}
-                        />
+                          style={{ width: ${item.level}% }}
+                        ></div>
                       </div>
                     </div>
                   ))}
@@ -120,7 +120,6 @@ export const Skills = () => {
               </CardContent>
             </Card>
 
-            {/* Design & Security */}
             <Card className="portfolio-card">
               <CardContent className="p-8">
                 <h4 className="font-semibold mb-6 text-primary">Design & Security</h4>
@@ -137,10 +136,10 @@ export const Skills = () => {
                         <span className="text-sm text-muted-foreground">{item.level}%</span>
                       </div>
                       <div className="w-full bg-secondary rounded-full h-2">
-                        <div
+                        <div 
                           className="bg-gradient-secondary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${item.level}%` }}
-                        />
+                          style={{ width: ${item.level}% }}
+                        ></div>
                       </div>
                     </div>
                   ))}
