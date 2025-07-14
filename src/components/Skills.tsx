@@ -4,14 +4,14 @@ import { Code2, Palette, Shield, Database, Wrench, Smartphone } from 'lucide-rea
 
 export const Skills = () => {
   const skillCategories = [
-    {
-      title: "Languages & Databases",
-      icon: <Code2 className="w-6 h-6" />,
-      color: "text-tech-blue",
-      bgColor: "bg-tech-blue/10",
-      skills: ["Dart", "Java", "TypeScript", "MongoDB", "Firebase", "SQL"],
-      description: "Proficient in multiple programming languages and database technologies"
-    },
+    // {
+    //   title: "Languages & Databases",
+    //   icon: <Code2 className="w-6 h-6" />,
+    //   color: "text-tech-blue",
+    //   bgColor: "bg-tech-blue/10",
+    //   skills: ["Dart", "Java", "TypeScript", "MongoDB", "Firebase", "SQL"],
+    //   description: "Proficient in multiple programming languages and database technologies"
+    // },
     {
       title: "Developer Tools",
       icon: <Wrench className="w-6 h-6" />,
@@ -44,14 +44,14 @@ export const Skills = () => {
       skills: ["Penetration Testing", "Vulnerability Assessment", "Security Analysis", "APK Scanning", "Network Security"],
       description: "Specialized knowledge in application and network security"
     },
-    {
-      title: "Cloud & DevOps",
-      icon: <Database className="w-6 h-6" />,
-      color: "text-primary",
-      bgColor: "bg-primary/10",
-      skills: ["Firebase", "Git", "Version Control", "CI/CD", "Cloud Functions", "Real-time Databases"],
-      description: "Cloud services and modern development workflows"
-    }
+    // {
+    //   title: "Cloud & DevOps",
+    //   icon: <Database className="w-6 h-6" />,
+    //   color: "text-primary",
+    //   bgColor: "bg-primary/10",
+    //   skills: ["Firebase", "Git", "Version Control", "CI/CD", "Cloud Functions", "Real-time Databases"],
+    //   description: "Cloud services and modern development workflows"
+    // }
   ];
 
   return (
