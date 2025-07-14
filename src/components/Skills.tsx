@@ -50,12 +50,12 @@ export const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 max-w-screen-xl mx-auto">
           {skillCategories.map((category, index) => (
             <Card key={index} className="portfolio-card group h-full">
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className={p-3 rounded-lg ${category.bgColor}}>
+                  <div className={`p-3 rounded-lg ${category.bgColor}`}>
                     <div className={category.color}>
                       {category.icon}
                     </div>
@@ -111,7 +111,7 @@ export const Skills = () => {
                       <div className="w-full bg-secondary rounded-full h-2">
                         <div 
                           className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: ${item.level}% }}
+                          style={{ width: `${item.level}%` }}
                         ></div>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ export const Skills = () => {
                       <div className="w-full bg-secondary rounded-full h-2">
                         <div 
                           className="bg-gradient-secondary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: ${item.level}% }}
+                          style={{ width: `${item.level}%` }}
                         ></div>
                       </div>
                     </div>
