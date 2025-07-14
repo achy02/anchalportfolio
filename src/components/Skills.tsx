@@ -1,10 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Code2, Palette, Shield, Database, Wrench, Smartphone } from 'lucide-react';
+import { Palette, Shield, Wrench, Smartphone } from 'lucide-react';
 
 export const Skills = () => {
   const skillCategories = [
-    
     {
       title: "Developer Tools",
       icon: <Wrench className="w-6 h-6" />,
@@ -36,7 +35,7 @@ export const Skills = () => {
       bgColor: "bg-destructive/10",
       skills: ["Penetration Testing", "Vulnerability Assessment", "Security Analysis", "APK Scanning", "Network Security"],
       description: "Specialized knowledge in application and network security"
-    },
+    }
   ];
 
   return (
