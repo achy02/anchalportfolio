@@ -60,7 +60,7 @@ export const Navigation = () => {
               variant="outline"
               size="sm"
               className="bg-gradient-primary hover:bg-gradient-secondary border-0 text-white hover:scale-105 transition-all duration-300"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('/resumee.pdf', '_blank')}
             >
               <Download className="w-4 h-4 mr-2" />
               Resume
@@ -95,17 +95,15 @@ export const Navigation = () => {
               ))}
               
               <Button
-                variant="outline"
-                size="sm"
-                className="w-full bg-gradient-primary hover:bg-gradient-secondary border-0 text-white mt-4"
-                onClick={() => {
-                  window.open('#', '_blank');
-                  setIsMobileMenuOpen(false);
-                }}
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
-              </Button>
+  variant="outline"
+  size="sm"
+  className="w-full bg-gradient-primary hover:bg-gradient-secondary border-0 text-white mt-4"
+  onClick={() => window.open('/resumee.pdf', '_blank')}
+>
+  <Download className="w-4 h-4 mr-2" />
+  Download Resume
+</Button>
+
             </div>
           </div>
         )}
