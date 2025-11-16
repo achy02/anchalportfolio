@@ -44,7 +44,7 @@ export const Contact = () => {
       icon: <Palette className="w-6 h-6" />,
       title: "Figma",
       value: "View my designs",
-      link: "https://www.figma.com/@yourusername",
+      link: "https://www.figma.com/@anchaltiwari",
       description: "Explore my UI/UX design work",
       color: "text-orange-500",
       bgColor: "bg-orange-500/10"
