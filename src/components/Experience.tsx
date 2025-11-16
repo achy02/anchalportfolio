@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, MapPin, Building2 } from 'lucide-react';
+import { Calendar, MapPin, Building2, ExternalLink } from 'lucide-react';
 
 export const Experience = () => {
   const experiences = [
@@ -10,6 +10,7 @@ export const Experience = () => {
       location: "Remote",
       duration: "Dec 2024 – Feb 2025",
       type: "Internship",
+      projectLink: "https://play.google.com/store/apps/details?id=com.fundsmama.personalloan&hl=en-US&pli=1",
       description: [
         "Designed a comprehensive end-to-end UI/UX experience for the Fundsmama mobile app and website using Figma, focusing on user accessibility, seamless navigation, and an intuitive interface.",
         "Developed wireframes, interactive prototypes, and high-fidelity responsive designs, ensuring a consistent experience across devices.",
@@ -26,6 +27,7 @@ export const Experience = () => {
       location: "Remote",
       duration: "June 2022 – August 2022",
       type: "Internship",
+      projectLink: null,
       description: [
         "Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.",
         "Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.",
@@ -90,6 +92,21 @@ export const Experience = () => {
                           </div>
                         </div>
 
+                        {/* Project Demo Link */}
+                        {exp.projectLink && (
+                          <div className="mb-6">
+                            <a
+                              href={exp.projectLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-colors duration-300 font-medium text-sm"
+                            >
+                              <ExternalLink className="w-4 h-4" />
+                              View Project Demo
+                            </a>
+                          </div>
+                        )}
+
                         {/* Description */}
                         <div className="mb-6">
                           <ul className="space-y-3">
@@ -129,3 +146,4 @@ export const Experience = () => {
     </section>
   );
 };
+
