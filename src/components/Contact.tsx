@@ -40,6 +40,15 @@ export const Contact = () => {
       color: "text-tech-cyan",
       bgColor: "bg-tech-cyan/10"
     }
+     {
+      icon: <Palette className="w-6 h-6" />,
+      title: "Figma",
+      value: "View my designs",
+      link: "https://www.figma.com/@yourusername",
+      description: "Explore my UI/UX design work",
+      color: "text-orange-500",
+      bgColor: "bg-orange-500/10"
+    }
   ];
 
   return (
