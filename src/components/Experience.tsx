@@ -1,0 +1,116 @@
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Calendar, MapPin, Building2, ExternalLink } from 'lucide-react';
+
+import { experiences } from '../data/content';
+
+export const Experience = () => {
+
+  return (
+    <section id="experience" className="py-20 bg-secondary/5">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Work <span className="text-gradient-primary">Experience</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Professional journey in design and development
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-primary"></div>
+
+            <div className="space-y-12">
+              {experiences.map((exp, index) => (
+                <div key={index} className="relative">
+                  {/* Timeline dot */}
+                  <div className="absolute left-2 md:left-6 top-8 w-4 h-4 rounded-full bg-gradient-primary border-4 border-background"></div>
+
+                  {/* Experience card */}
+                  <div className="ml-12 md:ml-20">
+                    <Card className="portfolio-card group">
+                      <CardContent className="p-8">
+                        {/* Header */}
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+                          <div>
+                            <div className="flex items-center gap-3 mb-2">
+                              <Building2 className="w-5 h-5 text-primary" />
+                              <h3 className={`text-2xl font-bold bg-clip-text text-transparent ${exp.color}`}>
+                                {exp.company}
+                              </h3>
+                            </div>
+                            <h4 className="text-xl font-semibold mb-2">{exp.role}</h4>
+                            <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-sm">
+                              <div className="flex items-center gap-1">
+                                <Calendar className="w-4 h-4" />
+                                {exp.duration}
+                              </div>
+                              <div className="flex items-center gap-1">
+                                <MapPin className="w-4 h-4" />
+                                {exp.location}
+                              </div>
+                              <Badge variant="secondary" className="text-xs">
+                                {exp.type}
+                              </Badge>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Project Demo Link */}
+                        {exp.projectLink && (
+                          <div className="mb-6">
+                            <a
+                              href={exp.projectLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-colors duration-300 font-medium text-sm"
+                            >
+                              <ExternalLink className="w-4 h-4" />
+                              View Project Demo
+                            </a>
+                          </div>
+                        )}
+
+                        {/* Description */}
+                        <div className="mb-6">
+                          <ul className="space-y-3">
+                            {exp.description.map((item, idx) => (
+                              <li key={idx} className="flex items-start gap-3 text-muted-foreground">
+                                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <span className="leading-relaxed">{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Skills */}
+                        <div>
+                          <h5 className="font-semibold mb-3 text-sm">Technologies & Skills:</h5>
+                          <div className="flex flex-wrap gap-2">
+                            {exp.skills.map((skill, idx) => (
+                              <Badge
+                                key={idx}
+                                variant="outline"
+                                className="tech-skill text-xs"
+                              >
+                                {skill}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
