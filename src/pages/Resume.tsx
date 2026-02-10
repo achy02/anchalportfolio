@@ -45,7 +45,7 @@ const Resume = () => {
             <div className="flex justify-between items-center mb-12">
               <h1 className="text-4xl font-bold">Resume</h1>
               <a
-                href="/resume.pdf"
+                href="/Resume Analyst.pdf"
                 download
                 className="btn-primary flex items-center"
               >

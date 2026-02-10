@@ -2,9 +2,48 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, Building2, ExternalLink } from 'lucide-react';
 
+<<<<<<< HEAD
 import { experiences } from '../data/content';
 
 export const Experience = () => {
+=======
+export const Experience = () => {
+  const experiences = [
+    {
+      company: "FyreGig",
+      role: "UI/UX Designer Intern",
+      location: "Remote",
+      duration: "Dec 2024 – Feb 2025",
+      type: "Internship",
+      projectLink: "https://play.google.com/store/apps/details?id=com.fundsmama.personalloan&hl=en-US&pli=1",
+      description: [
+        "Designed a comprehensive end-to-end UI/UX experience for the Fundsmama mobile app and website using Figma, focusing on user accessibility, seamless navigation, and an intuitive interface.",
+        "Developed wireframes, interactive prototypes, and high-fidelity responsive designs, ensuring a consistent experience across devices.",
+        "Conducted user research, usability testing, and iterative design improvements to enhance user engagement and retention.",
+        "Collaborated closely with developers, product managers, and stakeholders to align design decisions with business objectives and technical feasibility.",
+        "Ensured the successful implementation of a fully functional, live platform, optimizing the design for real-world use."
+      ],
+      skills: ["Figma", "UI/UX Design", "User Research", "Prototyping", "Responsive Design"],
+      color: "bg-gradient-primary"
+    },
+    {
+      company: "AD Infotech",
+      role: "Developer Intern",
+      location: "Remote",
+      duration: "June 2022 – August 2022",
+      type: "Internship",
+      projectLink: null,
+      description: [
+        "Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.",
+        "Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.",
+        "Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.",
+        "Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android."
+      ],
+      skills: ["Flutter", "Dart", "Firebase", "Git", "Android Studio", "iOS Development"],
+      color: "bg-gradient-secondary"
+    }
+  ];
+>>>>>>> ab6f1490c100e2d66a6a52e178964cb5952be9de
 
   return (
     <section id="experience" className="py-20 bg-secondary/5">
@@ -22,13 +61,21 @@ export const Experience = () => {
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-primary"></div>
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> ab6f1490c100e2d66a6a52e178964cb5952be9de
             <div className="space-y-12">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative">
                   {/* Timeline dot */}
                   <div className="absolute left-2 md:left-6 top-8 w-4 h-4 rounded-full bg-gradient-primary border-4 border-background"></div>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> ab6f1490c100e2d66a6a52e178964cb5952be9de
                   {/* Experience card */}
                   <div className="ml-12 md:ml-20">
                     <Card className="portfolio-card group">
@@ -38,7 +85,11 @@ export const Experience = () => {
                           <div>
                             <div className="flex items-center gap-3 mb-2">
                               <Building2 className="w-5 h-5 text-primary" />
+<<<<<<< HEAD
                               <h3 className={`text-2xl font-bold bg-clip-text text-transparent ${exp.color}`}>
+=======
+                              <h3 className="text-2xl font-bold text-gradient-primary">
+>>>>>>> ab6f1490c100e2d66a6a52e178964cb5952be9de
                                 {exp.company}
                               </h3>
                             </div>
@@ -91,9 +142,15 @@ export const Experience = () => {
                           <h5 className="font-semibold mb-3 text-sm">Technologies & Skills:</h5>
                           <div className="flex flex-wrap gap-2">
                             {exp.skills.map((skill, idx) => (
+<<<<<<< HEAD
                               <Badge
                                 key={idx}
                                 variant="outline"
+=======
+                              <Badge 
+                                key={idx} 
+                                variant="outline" 
+>>>>>>> ab6f1490c100e2d66a6a52e178964cb5952be9de
                                 className="tech-skill text-xs"
                               >
                                 {skill}

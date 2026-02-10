@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UI/UX Designer & Mobile App Developer Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
@@ -53,3 +54,24 @@ The build files will be in the `dist` directory.
 ## License
 
 MIT
+=======
+---
+
+## 📦 Installation
+
+Make sure you have **Node.js ≥18** installed.
+
+```bash
+# Clone the repository
+git clone https://github.com/achy02/anchalportfolio.git
+cd anchalportfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+>>>>>>> ab6f1490c100e2d66a6a52e178964cb5952be9de
